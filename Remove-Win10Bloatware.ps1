@@ -162,7 +162,7 @@ $excludeItems = 'Microsoft.Windows.CloudExperienceHost',
 'paint',
 'edge'
 
-$bloatwareApps = Get-Win10Bloatware -ApplicationToExclude $excludeItems -Verbose #store, calc, .net., paint, edge
+$bloatwareApps = Get-Win10Bloatware -ApplicationToExclude $excludeItems -Verbose
 $provisionedApps = Get-Win10ProvisionedBloatware -ApplicationToExclude store, calc, paint -Verbose
 
 if ($bloatwareApps) 
